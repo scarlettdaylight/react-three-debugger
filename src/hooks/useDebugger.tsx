@@ -50,7 +50,7 @@ export const useDebugger: UseDebuggerProps = (obj, config = { rootID: 'root' }) 
         if (wrapperDom.current && !debugDom.current) {
             const debugNode = document.createElement('div')
             debugNode.id = debuggerID
-            debugNode.style.marginBottom = '2px'
+            debugNode.style.marginBottom = '4px'
             wrapperDom.current.appendChild(debugNode)
             debugDom.current = document.getElementById(debuggerID)
         }
